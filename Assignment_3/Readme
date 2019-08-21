@@ -1,0 +1,42 @@
+Interrupt driven Timer
+----------------------------------------------------------------------
+step to run:
+1. Open command prompt as administrator.
+2. Change directory to the folder containing asm file.
+3. run command "c16 -h output.hex -l list.lst file_name.asm".
+4. Run xt85.exe.
+5. Keep dip switch 1 on always.
+6. Switch on 4th dip switch and press reset on board.
+7. Press ctrl+d and enter file name test.hex
+8. Press enter till download is complete.
+9: Once download is completed switch 4th dip to left.
+----------------------------------------------------------------------
+
+On Board:
+
+Press GO
+Store the Address of INTRR label at mem location 8FBF.
+Enter 9000 and then Execute (9000h is origin)
+CLOC is displayed
+Enter the time from where user want to start the countdown.
+Enter Execute.
+The Countdown will be started and if KBINT is pressed the-
+-countdown will be stopped.
+If any key is pressed once again countdown will start again.
+
+
+INTRR:
+    The address in PC is stored in the stack and Vector adress is stored in PC-
+    -and starts executing the ISR after completion of this, Processor POP the-
+    -content of stack to PC and hence main program is back in execution.
+
+GTHEX: Gets hexadecimal digits and displays them.
+HXDSP: Expands hexadecimal digits for display
+CLEAR: Clears the display
+RDKBD: Reads from keyboard.
+KBINT: Keyboard Interrupt.
+
+CURDT: Data of display
+UPDDT: Updates Data field of the display
+CURAD: Address of display
+UPDAD: Updates Address field of the display
