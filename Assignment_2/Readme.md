@@ -14,8 +14,8 @@ step to run:
 9: Once download is completed switch 4th dip to left.
 -------------------------------------------------------------------------------
 On board:
-1: Press Go.
 
+1: Press Go.
 2: enter 9000 and then Execute. (9000 is the origin)
 
 3: CLOC is displayed press any key except RESET.
