@@ -13,7 +13,6 @@ step to run:
 8. Press enter till download is complete.
 9: Once download is completed switch 4th dip to left.
 -------------------------------------------------------------------------------
-
 On board:
 1: Press Go.
 2: enter 9000 and then Execute. (9000 is the origin)
@@ -28,16 +27,15 @@ DELAY Function:
         
 -------------------------------------------------------------------------------
 Other Functions used:
-
 GTHEX: Gets hexadecimal digits and displays them.
-HXDSP: Expands hexadecimal digits for display
-CLEAR: Clears the display
+HXDSP: Expands hexadecimal digits for display.
+CLEAR: Clears the display.
 RDKBD: Reads from keyboard.
 
-CURDT: Data of display
-UPDDT: Updates Data field of the display
-CURAD: Address of display
-UPDAD: Updates Address field of the display
+CURDT: Data of display.
+UPDDT: Updates Data field of the display.
+CURAD: Address of display.
+UPDAD: Updates Address field of the display.
 
 -------------------------------------------------------------------------------
 
