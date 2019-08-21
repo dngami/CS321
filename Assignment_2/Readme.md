@@ -15,9 +15,13 @@ step to run:
 -------------------------------------------------------------------------------
 On board:
 1: Press Go.
+
 2: enter 9000 and then Execute. (9000 is the origin)
+
 3: CLOC is displayed press any key except RESET.
+
 4: Enter the time from where user want to start the clock.
+
 5: Press Execute.
 
 DELAY Function:
