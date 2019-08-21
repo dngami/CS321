@@ -1,9 +1,9 @@
 cpu "8085.tbl"
 hof "int8"
 
-org 9000h               ; Origin address of program
+org 9000h              		; Origin address of program
 
-GTHEX: EQU 030EH    	;Gets hex digits and displays them
+GTHEX: EQU 030EH    		;Gets hex digits and displays them
 HXDSP: EQU 034FH		;Expands hex digits for display
 OUTPUT:EQU 0389H		;Outputs characters to display
 CLEAR: EQU 02BEH		;Clears the display
@@ -15,8 +15,8 @@ UPDDT: EQU 044cH		;data of display
 CURAD: EQU 8FEFH		;Updates Data field of the display
 UPDAD: EQU 0440H		;Updates Address field of the display
 
-MVI A,00H 				;next 14 instructions used to display
-MVI B,00H 				;"cloc" on display showing start of clock 
+MVI A,00H 			;next 14 instructions used to display
+MVI B,00H 			;"cloc" on display showing start of clock 
 
 LXI H,8840H
 MVI M,0CH
@@ -50,8 +50,8 @@ CHN_HR_MIN:			;start seconds counter from 59s
 DECR_SEC:                   
 	STA 8200H
 	MVI A,0BH
-	SIM				;check after each second if any interrupt is
-	EI				;coming
+	SIM			;check after each second if any interrupt is
+	EI			;coming
 	LDA 8200H
 	STA CURDT		;update display
 	CALL UPDAD
@@ -85,7 +85,7 @@ BREAK:
 	RST 5
 	
 	
-DELAY:              ; Delay function to generate 1 sec 
+DELAY:              		; Delay function to generate 1 sec 
   MVI C,02H
 L1: 
   MVI D, 0FCH
@@ -106,7 +106,7 @@ INTRR:  			;ISR to store values of program
 	PUSH PSW           	;Push current program counter in stack
 	CALL RDKBD 		;when another interrupt comes,pop original PC
 	POP PSW					
-	EI				;Enabling Inerrupt again
+	EI			;Enabling Inerrupt again
 	RET
 
 SUBTRACT_FUNCTION:		;bcd subtractor 
