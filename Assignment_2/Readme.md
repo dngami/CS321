@@ -16,6 +16,7 @@ step to run:
 On board:
 
 1: Press Go.
+
 2: enter 9000 and then Execute. (9000 is the origin)
 
 3: CLOC is displayed press any key except RESET.
@@ -31,14 +32,21 @@ DELAY Function:
         
 -------------------------------------------------------------------------------
 Other Functions used:
+
 GTHEX: Gets hexadecimal digits and displays them.
+
 HXDSP: Expands hexadecimal digits for display.
+
 CLEAR: Clears the display.
+
 RDKBD: Reads from keyboard.
 
 CURDT: Data of display.
+
 UPDDT: Updates Data field of the display.
+
 CURAD: Address of display.
+
 UPDAD: Updates Address field of the display.
 
 -------------------------------------------------------------------------------
